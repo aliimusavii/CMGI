@@ -1,0 +1,2 @@
+# CMGI
+for AI Class
