@@ -66,7 +66,7 @@ class DRForecastingInterface:
         print(f"Creating forecast data from {start_date} to {end_date}...")
         
         # Generate hourly timestamps
-        date_range = pd.date_range(start=start_date, end=end_date, freq='H')[:-1]
+        date_range = pd.date_range(start=start_date, end=end_date, freq='h')[:-1]
         
         forecast_data = []
         for timestamp in date_range:

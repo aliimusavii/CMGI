@@ -57,7 +57,7 @@ class DemandResponseForecaster:
         df['daily_demand_percentile'] = df.groupby(df['timestamp'].dt.date)['demand_mw'].rank(pct=True)
         
         # Fill NaN values
-        df = df.fillna(method='forward').fillna(method='backward')
+        df = df.fillna(method='ffill').fillna(method='bfill')
         
         return df
     

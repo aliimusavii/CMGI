@@ -291,7 +291,7 @@ if __name__ == "__main__":
     from datetime import datetime, timedelta
     
     # Create sample forecast results
-    dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='H')
+    dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='h')
     sample_data = pd.DataFrame({
         'timestamp': dates,
         'hour': dates.hour,

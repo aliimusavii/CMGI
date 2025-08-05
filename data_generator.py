@@ -60,7 +60,7 @@ class DemandDataGenerator:
     
     def generate_historical_data(self):
         """Generate complete historical demand dataset"""
-        date_range = pd.date_range(start=self.start_date, end=self.end_date, freq='H')[:-1]
+        date_range = pd.date_range(start=self.start_date, end=self.end_date, freq='h')[:-1]
         
         data = []
         for timestamp in date_range:
